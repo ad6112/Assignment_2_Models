@@ -5,13 +5,14 @@ This ERD represents a simplified version of Notion's database structure on their
 User --> Workspace --> Page --> Block
 
 <h3>Entities</h3>
-1. Users: Represents each individual users of the Notion platform, identified by a user ID. 
+
+1. <strong>Users</strong>: Represents each individual users of the Notion platform, identified by a user ID. 
 
 Primary Key: userId
 
 Attributes: userId, email, firstName, lastName
 
-2. Workspace: Represents workspaces where users organize their content. Each user can create multiple workspaces. In reality, multiple users can work on one workspace, but for simplicity, in my ERD I assumed that each workspace only belongs to one user.
+2. <strong>Workspace</strong>: Represents workspaces where users organize their content. Each user can create multiple workspaces. In reality, multiple users can work on one workspace, but for simplicity, in my ERD I assumed that each workspace only belongs to one user.
 Workspaces can be on the Free, Plus, Eduction Plus, Business, or Enterprise plans. 
 
 Primary Key: workspaceId
