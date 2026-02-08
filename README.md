@@ -1,8 +1,10 @@
+<h1>Notion App ERD</h1>
+
 This ERD represents a simplified version of Notion's database structure on their desktop app, capturing some core entities and their relationships.
 
 User --> Workspace --> Page --> Block
 
-Entities
+<h3>Entities</h3>
 1. Users: Represents each individual users of the Notion platform, identified by a user ID. 
 
 Primary Key: userId
