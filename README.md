@@ -7,6 +7,7 @@ Entities
 Represents each individual users of the Notion platform, identified by a user ID. 
 
 Primary Key: userId
+
 Attributes: userId, email, firstName, lastName
 
 2. Workspace
@@ -14,19 +15,25 @@ Represents workspaces where users organize their content. Each user can create m
 Workspaces can be on the Free, Plus, Eduction Plus, Business, or Enterprise plans. 
 
 Primary Key: workspaceId
+
 Foreign Key: workspace.userId
+
 Attributes: workspaceId, workspaceName, planType
 
 3. Page
 Represents individual pages within a workspace. Each workspace can have many pages. 
 
 Primary Key: pageId
+
 Foreign Keys: page.workspaceId, page.userId
+
 Attributes: title, dateCreated
 
 4. Block
 Notion organizes its pages using content blocks within them. Each page has many blocks. These can be text, images, tables, headings, code/math blocks, and more. Blocks can have a color assigned to them.
 
 Primary Key: blockId
+
 Foreign Keys: pageId
+
 Attributes: blockId, pageId, blockType, blockColor
