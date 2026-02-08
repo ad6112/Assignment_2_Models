@@ -21,7 +21,7 @@ Foreign Key: workspace.userId
 
 Attributes: workspaceId, workspaceName, planType
 
-3. Page: Represents individual pages within a workspace. Each workspace can have many pages. 
+3.   <strong>Page</strong>: Represents individual pages within a workspace. Each workspace can have many pages. 
 
 Primary Key: pageId
 
@@ -29,7 +29,7 @@ Foreign Keys: page.workspaceId, page.userId
 
 Attributes: title, dateCreated
 
-4. Block: Notion organizes its pages using content blocks within them. Each page has many blocks. These can be text, images, tables, headings, code/math blocks, and more. Blocks can have a color assigned to them.
+4. <strong>Block</strong>: Notion organizes its pages using content blocks within them. Each page has many blocks. These can be text, images, tables, headings, code/math blocks, and more. Blocks can have a color assigned to them.
 
 Primary Key: blockId
 
